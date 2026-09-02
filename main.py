@@ -13,7 +13,6 @@ def main():
     dt = 0.0
 
     #GAME LOOP
-
     while True:
         log_state()
 
@@ -25,6 +24,7 @@ def main():
 
         pygame.display.flip()
 
+        # limit the framerate to 60 FPS
         milliseconds = clock.tick(60)
         dt = milliseconds / 1000
 
